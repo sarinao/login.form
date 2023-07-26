@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+} 
+img{
+    max-width: 100%;
+    max-height: 100%;
+} 
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(53, 95, 220, 0.751); 
+    font-family: sans-serif;
+}
+#container{
+    max-width: 90%;
+}
+#login_form{
+    display: flex; 
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#login_img img { 
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+#login_from_right{
+    padding: 2rem;
+}
+#login_from_right h1{
+    margin-bottom: 1rem;
+}
+
+#login_from_right form input{
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 2px solid rgb(78, 131, 230); 
+    padding: 0.5rem ;
+    border-radius: 5px;
+} 
+#login_from_right form button{
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 0 none ;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    background-color: rgb(73, 73, 243);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+/*#login_from_righ form label{
+    font-size: 0.8rem;
+    color: rgb(123, 60, 60);
+}
+*/
+
+.label{
+    font-size: 0.8rem;
+    color: gray;
+} 
+#login_from_right form button:hover{
+    background-color: rgb(31, 31, 122);
+}
+#login_from_right form input:focus{
+    box-shadow: 0 0 2px 2px rgba(137, 189, 232, 0.619);
+}
+@media screen and (min-width:700px){
+    #login_form{
+        display: flex; 
+        flex-direction: row;
+        background-color: white;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    #login_from_right{
+        padding: 5rem;
+        flex: 1;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    #login_img { 
+        width: 500px;
+        height: 100%;
+    
+    }
+    #login_img img{
+        width: 100%;
+        height: 90vh;
+        display: block;
+    }
+    body{
+        background-color: rgb(50, 168, 227);
+    }
+} 
